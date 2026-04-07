@@ -484,6 +484,10 @@ class RamaLamaShell(cmd.Cmd):
         if user_content.endswith("\\"):
             return False
 
+        # self.content.append(user_content.rstrip(" \\"))
+        # if user_content.endswith(" \\"):
+        #     return False
+
         content = "\n".join(self.content)
         self.content = []
 
